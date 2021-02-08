@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>shopping</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        </head>
+    <body class="is-preload">
+    <section id="main" class="wrapper">
+        <center>
+       <form name="myForm" onsubmit="return validateForm()" >
+										<div >
+											
+											<div class="col-6 col-12-xsmall" style="width:500px;">
+												<label>E-mail:</label><input type="email" name="email" id="email" value="" >
+											</div>
+                                            <div class="col-6 col-12-xsmall" style="width:500px;">
+												<label>Password</label><input type="password" name="pass" id="ph" value="" action="/saloon.html">
+											</div>
+											<!-- Break -->
+											
+											<!-- Break -->
+											
+											<!-- Break -->
+											
+											<!-- Break -->
+											<div style="margin-top: 50px; margin-left:500px;" >
+												<ul class="actions">
+													<li><input type="submit" value="Submit " class="primary"></li>
+													<li><input type="reset" value="Reset"></li>
+												</ul>
+											</div>
+                                                
+										</div>
+									</form> 
+            <script>
+function validateForm() {
+   
+    var y = document.forms["myForm"]["email"].value;
+    var z = document.forms["myForm"]["pass"].value;
+    if ((y == "")||(z == "")) {
+        alert("Details must be filled out");
+        return false;
+    }
+   
+    
+    else{
+        alert("login request submitted");
+        
+    }
+        
+}
+</script>
+            </center>
+        
+    </section>
+    </body>
+    </html>

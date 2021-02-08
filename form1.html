@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>shopping</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        </head>
+    <body class="is-preload">
+    <section id="main" class="wrapper">
+        <center>
+       <form name="myForm" onsubmit="return validateForm()" >
+										<div >
+											<div class="col-6 col-12-xsmall" style="width:500px;">
+												<label>Name :</label> <input type="text" name="name" id="name" value="" >
+											</div><br>
+											<div class="col-6 col-12-xsmall" style="width:500px;">
+												<label>E-mail:</label><input type="email" name="email" id="email" value="" >
+											</div>
+                                            <div class="col-6 col-12-xsmall" style="width:500px;">
+												<label>Phone Number</label><input type="text" name="ph" id="ph" value="" action="/saloon.html">
+											</div>
+											<!-- Break -->
+											
+											<!-- Break -->
+											
+											<!-- Break -->
+											
+											<!-- Break -->
+											<div style="margin-top: 50px; margin-left:500px;" >
+												<ul class="actions">
+													<li><input type="submit" value="Submit Form" class="primary"></li>
+													<li><input type="reset" value="Reset"></li>
+												</ul>
+											</div>
+                                                
+										</div>
+									</form> 
+            <script>
+function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    var y = document.forms["myForm"]["email"].value;
+    var z = document.forms["myForm"]["ph"].value;
+    if ((x == "")||(y == "")||(z == "")) {
+        alert("Details must be filled out");
+        return false;
+    }
+    else{ if(y===NaN)
+        {
+        alert("enter phone number correctly");
+        return false;
+    }
+    else{
+        alert("booking request submitted");
+    }
+        }
+}
+</script>
+            </center>
+        
+    </section>
+    </body>
+    </html>
